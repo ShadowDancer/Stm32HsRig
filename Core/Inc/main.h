@@ -70,6 +70,8 @@ void Error_Handler(void);
 #define GIPO_PA6_GPIO_Port GPIOA
 #define GIPO_PA7_Pin GPIO_PIN_7
 #define GIPO_PA7_GPIO_Port GPIOA
+#define PWM3_Pin GPIO_PIN_0
+#define PWM3_GPIO_Port GPIOB
 #define PWM0_Pin GPIO_PIN_1
 #define PWM0_GPIO_Port GPIOB
 #define SWDIO_Pin GPIO_PIN_13
