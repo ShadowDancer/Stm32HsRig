@@ -13,32 +13,30 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3350 3500 3    50   Input ~ 0
-GND
 Text HLabel 3450 3500 3    50   Input ~ 0
 SHIELD
 Text HLabel 3050 3200 0    50   Input ~ 0
 D-
 Text HLabel 3050 3100 0    50   Input ~ 0
 D+
-Text HLabel 3000 2900 0    50   Input ~ 0
+Text HLabel 3000 2700 1    50   Input ~ 0
 VCC
 $Comp
-L Device:CP C14
+L Device:CP USB_DECOUPLING1
 U 1 1 602450EC
-P 2450 3050
-AR Path="/6018619B/602450EC" Ref="C14"  Part="1" 
-AR Path="/60192241/602450EC" Ref="C15"  Part="1" 
-F 0 "C14" H 2568 3096 50  0000 L CNN
-F 1 "100uF" H 2568 3005 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x5.9" H 2488 2900 50  0001 C CNN
-F 3 "~" H 2450 3050 50  0001 C CNN
-	1    2450 3050
+P 1950 3000
+AR Path="/6018619B/602450EC" Ref="USB_DECOUPLING1"  Part="1" 
+AR Path="/60192241/602450EC" Ref="USB_DECOUP2"  Part="1" 
+F 0 "USB_DECOUPLING1" H 2068 3046 50  0000 L CNN
+F 1 "100uF" H 2068 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.9" H 1988 2850 50  0001 C CNN
+F 3 "~" H 1950 3000 50  0001 C CNN
+	1    1950 3000
 	1    0    0    -1  
 $EndComp
-Text HLabel 2450 2900 1    50   Input ~ 0
+Text HLabel 1950 2650 1    50   Input ~ 0
 VCC
-Text HLabel 2450 3200 3    50   Input ~ 0
+Text HLabel 1950 3450 3    50   Input ~ 0
 GND
 Wire Wire Line
 	3050 2900 3000 2900
@@ -57,4 +55,12 @@ F 3 " ~" H 3500 3050 50  0001 C CNN
 	1    3350 3100
 	-1   0    0    -1  
 $EndComp
+Text HLabel 3350 3500 3    50   Input ~ 0
+GND
+Wire Wire Line
+	1950 3450 1950 3150
+Wire Wire Line
+	1950 2850 1950 2650
+Wire Wire Line
+	3000 2900 3000 2700
 $EndSCHEMATC
